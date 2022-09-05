@@ -26,7 +26,7 @@ class SidebarScreen extends StatelessWidget {
               children: [
                 const CircleAvatar(
                   backgroundImage:
-                  AssetImage('asset/images/logo-circle-linkedin.jpg'),
+                      AssetImage('asset/images/logo-circle-linkedin.jpg'),
                   radius: 21.0,
                 ),
                 const SizedBox(

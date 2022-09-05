@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import '../model/sidebar.dart';
 
 class SidebarRow extends StatelessWidget {
-
   const SidebarRow({required this.item});
 
   final SidebarItem item;
