@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SidebarItem {
@@ -19,7 +22,10 @@ var sidebarItem = [
           Color(0xFF00EAFF),
           Color(0xFF0076FF),
         ]),
-    icon: const Icon(Icons.home, color: Colors.white),
+    icon: Icon(
+      Platform.isAndroid ? Icons.home : CupertinoIcons.home,
+      color: Colors.white,
+    ),
   ),
   SidebarItem(
     title: 'Courses',
@@ -30,7 +36,10 @@ var sidebarItem = [
           Color(0xFFFA7d75),
           Color(0xFFC23D61),
         ]),
-    icon: const Icon(Icons.library_books, color: Colors.white),
+    icon: Icon(
+      Platform.isAndroid ? Icons.library_books : CupertinoIcons.book_solid,
+      color: Colors.white,
+    ),
   ),
   SidebarItem(
     title: 'Billing',
@@ -41,7 +50,10 @@ var sidebarItem = [
           Color(0xFFFAD64A),
           Color(0xFFEA880F),
         ]),
-    icon: const Icon(Icons.credit_card, color: Colors.white),
+    icon: Icon(
+      Platform.isAndroid ? Icons.credit_card : CupertinoIcons.creditcard,
+      color: Colors.white,
+    ),
   ),
   SidebarItem(
     title: 'Settings',
@@ -52,6 +64,9 @@ var sidebarItem = [
           Color(0xFF4E62CC),
           Color(0xFF202A78),
         ]),
-    icon: const Icon(Icons.settings, color: Colors.white),
+    icon: Icon(
+      Platform.isAndroid ? Icons.settings : CupertinoIcons.settings_solid,
+      color: Colors.white,
+    ),
   ),
 ];
