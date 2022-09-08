@@ -30,7 +30,7 @@ var kCardTitleStyle = TextStyle(
   fontFamily: Platform.isIOS ? 'SF Pro Text' : null,
   fontWeight: FontWeight.bold,
   color: Colors.white,
-  fontSize: 22.0,
+  fontSize: 23.0,
   decoration: TextDecoration.none,
 );
 var kTitle2Style = TextStyle(
